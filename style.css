@@ -29,6 +29,52 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(56, 119, 238, 70%);
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+
+.item.active .item__button {
+  display: flex;
+  gap: 15px;
+  width: fit-content;
+  padding: 11px 15px;
+  border-radius: 40px;
+  background-color: rgba(56, 119, 238, 100%);
+}
+
+.item.active .item__button-label {
+  display: block;
+}
+
+.item.active .item__button.alterative {
+  background-color: rgba(106, 191, 75, 100%);
+}
+
+.item__button-label {
+  display: none;
+  font-size: 12px;
+}
+
+.item__button-symbol {
+  font-size: 20px;
+}
+
+.item__button.alterative {
+  background-color: rgba(106, 191, 75, 70%);
+}
+
 .item:nth-child(1) {
   left: 72.18%;
   top: 12.6vw;
